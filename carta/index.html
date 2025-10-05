@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!-- Estilos -->
+   <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background: rgb(131 17 17);
+    }
+
+    .tarjeta {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      margin-bottom: 20px;
+      text-align: center;
+      transition: transform 0.2s ease;
+      cursor: pointer;
+    }
+
+    .tarjeta:hover {
+      transform: translateY(-5px);
+    }
+
+    .tarjeta img {
+      border-radius: 10px;
+    }
+
+    h1 {
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container text-center">
+    <h1 style="color: white;">MENÚ</h1>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="tarjeta animate__animated animate__bounceIn" data-bs-toggle="modal" data-bs-target="#modalSandwich">
+          <h4>Sandwich</h4>
+          <h5>$40</h5>
+          <p><i>Incluyen mayonesa, aguacate, tomate, rajas, lechuga, queso derretido, pepinos, aderezo al gusto</i></p>
+          <img src="https://www.cocinadelirante.com/sites/default/files/images/2023/10/receta-de-sandwich-de-pollo.jpg" alt="" width="100" height="100">
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="tarjeta animate__animated animate__bounceIn" data-bs-toggle="modal" data-bs-target="#modalBaguette">
+          <h4>Baguette (25 cm)</h4>
+          <h5>$80</h5>
+          <p><i>Incluyen mayonesa, aguacate, tomate, rajas, lechuga, queso derretido, pepinos, aderezo al gusto</i></p>
+          <img src="https://img.freepik.com/fotos-premium/sandwich-baguette-fresco-lechuga-tomate-jamon-sobre-fondo-blanco-publicidad_503274-1629.jpg" alt="" width="100" height="100">
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="tarjeta animate__animated animate__bounceIn" data-bs-toggle="modal" data-bs-target="#modalCafe">
+          <h4>Café Caliente</h4>
+          <img src="https://thumbs.dreamstime.com/b/taza-de-caf%C3%A9-caliente-19224436.jpg" alt="" width="100" height="100">
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="tarjeta animate__animated animate__bounceIn"  data-bs-toggle="modal" data-bs-target="#modalChocolate">
+          <h4>Chocolate Caliente</h4>
+          <img src="https://st4.depositphotos.com/10614052/19666/i/450/depositphotos_196669396-stock-photo-cup-hot-chocolate-white-background.jpg" alt="" width="100" height="100">
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="tarjeta animate__animated animate__bounceIn"  data-bs-toggle="modal" data-bs-target="#modalJugos">
+          <h4>Jugos</h4>
+          <img src="https://st3.depositphotos.com/29384342/34125/i/450/depositphotos_341256896-stock-photo-colourful-arrangement-fresh-fruit-including.jpg" alt="" width="100" height="100">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="tarjeta animate__animated animate__bounceIn" data-bs-toggle="modal" data-bs-target="#modalChocomilk">
+          <h4>Chocomilk frío</h4>
+          <img src="https://www.shutterstock.com/image-photo/chocolate-milk-glass-isolated-on-600nw-2101200307.jpg" alt="" width="100" height="100">
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="tarjeta animate__animated animate__bounceIn" data-bs-toggle="modal" data-bs-target="#modalCafeHelado">
+          <h4>Café Helado</h4>
+          <img src="https://www.shutterstock.com/image-photo/special-menu-latte-ice-coffee-600nw-2545179227.jpg" alt="" width="100" height="100">
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="tarjeta animate__animated animate__bounceIn" data-bs-toggle="modal" data-bs-target="#modalTe">
+          <h4>Té</h4>
+          <img src="https://img.freepik.com/fotos-premium/taza-te-aislada-sobre-fondo-blanco_126277-525.jpg" alt="" width="100" height="100">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="tarjeta animate__animated animate__bounceIn" data-bs-toggle="modal" data-bs-target="#modalLicuado">
+            <h4>Licuado Natural</h4>
+            <img src="https://img.freepik.com/fotos-premium/batidos-frutas-aislado-sobre-fondo-blanco_488220-7677.jpg" alt="" width="100" height="100">
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="tarjeta animate__animated animate__bounceIn" data-bs-toggle="modal" data-bs-target="#modalAguas">
+            <h4>Aguas Naturales</h4>
+            <img src="https://media.istockphoto.com/id/477475204/es/foto/disfrute-de-agua-sobre-fondo-blanco.jpg?s=612x612&w=0&k=20&c=qC_ZCYebp_pPzFCtSoO-j5W0LJQDUbOKsaMPrjylglI=" alt="" width="100" height="100">
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+    <!-- MODAL SANDWICH -->
+    <div class="modal fade" id="modalSandwich" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header rojo text-white">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Sandwich - $40</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h5>Especialidad</h5>
+
+                    <div class="d-flex align-items-center mb-2">
+                    <p class="m-0 me-2" style="width:60px;">Pollo</p>
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    </div>
+
+                    <div class="d-flex align-items-center mb-2">
+                    <p class="m-0 me-2" style="width:60px;">Jamón</p>
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    </div>
+
+                    <div class="d-flex align-items-center mb-2">
+                    <p class="m-0 me-2" style="width:60px;">Atún</p>
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    </div>
+
+                    <div class="d-flex align-items-center mb-2">
+                    <p class="m-0 me-2" style="width:60px;">Huevo</p>
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="comentariosSandwich">Comentarios o Instrucciones:</label>
+                        <textarea class="form-control" id="comentariosSandwich"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        <div class="modal-footer">
+            <button type="button" class="btn btn-danger rojo w-100">Añadir</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- MODAL BAGUETTE -->
+    <div class="modal fade" id="modalBaguette" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header rojo text-white">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Baguette (25 cm) - $80</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h5>Especialidad</h5>
+
+                    <div class="d-flex align-items-center mb-2">
+                    <p class="m-0 me-2" style="width:60px;">Pollo</p>
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    </div>
+
+                    <div class="d-flex align-items-center mb-2">
+                    <p class="m-0 me-2" style="width:60px;">Jamón</p>
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    </div>
+
+                    <div class="d-flex align-items-center mb-2">
+                    <p class="m-0 me-2" style="width:60px;">Atún</p>
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    </div>
+
+                    <div class="d-flex align-items-center mb-2">
+                    <p class="m-0 me-2" style="width:60px;">Huevo</p>
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="comentariosSandwich">Comentarios o Instrucciones:</label>
+                        <textarea class="form-control" id="comentariosSandwich"></textarea>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+            
+        <div class="modal-footer">
+            <button type="button" class="btn btn-danger rojo w-100">Añadir</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- MODAL CAFE -->
+    <div class="modal fade" id="modalCafe" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header rojo text-white">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Café</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h5>Café Caliente Americano</h5>
+                    <hr>
+                    <div class="d-flex align-items-center mb-2">
+                    <p class="m-0 me-2" style="width:150px;">Chico (8oz) - $20</p>
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    </div>
+
+                    <div class="d-flex align-items-center mb-2">
+                    <p class="m-0 me-2" style="width:150px;">Normal (12oz) - $35</p>
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    </div>
+
+                    <div class="d-flex align-items-center mb-2">
+                    <p class="m-0 me-2" style="width:150px;">Grande (16oz) - $35</p>
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    </div>
+
+                    <hr>
+                    <h5>Café Caliente Lechero</h5>
+                    <hr>
+                    <div class="d-flex align-items-center mb-2">
+                    <p class="m-0 me-2" style="width:150px;">Chico (8oz) - $25</p>
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    </div>
+
+                    <div class="d-flex align-items-center mb-2">
+                    <p class="m-0 me-2" style="width:150px;">Normal (12oz) - $30</p>
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    </div>
+
+                    <div class="d-flex align-items-center mb-2">
+                    <p class="m-0 me-2" style="width:150px;">Grande (16oz) - $40</p>
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="comentariosSandwich">Comentarios o Instrucciones:</label>
+                        <textarea class="form-control" id="comentariosSandwich"></textarea>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+            
+        <div class="modal-footer">
+            <button type="button" class="btn btn-danger rojo w-100">Añadir</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- MODAL CHOCOLATE-->
+    <div class="modal fade" id="modalChocolate" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header rojo text-white">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Chocolate Caliente</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center mb-2">
+                    <p class="m-0 me-2" style="width:150px;">Normal (10oz) - $25</p>
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    </div>
+
+                    <div class="d-flex align-items-center mb-2">
+                    <p class="m-0 me-2" style="width:150px;">Grande (16oz) - $40</p>
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="comentariosSandwich">Comentarios o Instrucciones:</label>
+                        <textarea class="form-control" id="comentariosSandwich"></textarea>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+            
+        <div class="modal-footer">
+            <button type="button" class="btn btn-danger rojo w-100">Añadir</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- MODAL JUGOS-->
+    <div class="modal fade" id="modalJugos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header rojo text-white">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Jugos - $40</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center mb-2">
+                    <p class="m-0 me-2" style="width:150px;">Zanahoria - $25</p>
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    </div>
+
+                    <div class="d-flex align-items-center mb-2">
+                    <p class="m-0 me-2" style="width:150px;">Con betabel o combinados - $45</p>
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="comentariosSandwich">Comentarios o Instrucciones:</label>
+                        <textarea class="form-control" id="comentariosSandwich"></textarea>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+            
+        <div class="modal-footer">
+            <button type="button" class="btn btn-danger rojo w-100">Añadir</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- MODAL CHOCOMILK-->
+    <div class="modal fade" id="modalChocomilk" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header rojo text-white">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Chocomilk - $40</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center mb-2">
+                    <p class="m-0 me-2" style="width:150px;">Fresa</p>
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    </div>
+
+                    <div class="d-flex align-items-center mb-2">
+                    <p class="m-0 me-2" style="width:150px;">Cacao</p>
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="comentariosSandwich">Comentarios o Instrucciones:</label>
+                        <textarea class="form-control" id="comentariosSandwich"></textarea>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+            
+        <div class="modal-footer">
+            <button type="button" class="btn btn-danger rojo w-100">Añadir</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- MODAL CAFE HELADO-->
+    <div class="modal fade" id="modalCafeHelado" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header rojo text-white">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Café Helado (con leche evaporada)</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center mb-2">
+                    <p class="m-0 me-2" style="width:150px;">Normal (12oz) - $35</p>
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    </div>
+
+                    <div class="d-flex align-items-center mb-2">
+                    <p class="m-0 me-2" style="width:150px;">Grande (16oz) - $45</p>
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="comentariosSandwich">Comentarios o Instrucciones:</label>
+                        <textarea class="form-control" id="comentariosSandwich"></textarea>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+            
+        <div class="modal-footer">
+            <button type="button" class="btn btn-danger rojo w-100">Añadir</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- MODAL CAFE LICUADO-->
+    <div class="modal fade" id="modalLicuado" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header rojo text-white">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Licuado Natural (leche deslactosada)</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center mb-2">
+                    <p class="m-0 me-2" style="width:150px;">Manzana - $45</p>
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    </div>
+
+                    <div class="d-flex align-items-center mb-2">
+                    <p class="m-0 me-2" style="width:150px;">Plátano - $45</p>
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    </div>
+
+                    <div class="d-flex align-items-center mb-2">
+                    <p class="m-0 me-2" style="width:150px;"><i>*Incluye avena y canela al gusto*</i></p>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="comentariosSandwich">Comentarios o Instrucciones:</label>
+                        <textarea class="form-control" id="comentariosSandwich"></textarea>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+            
+        <div class="modal-footer">
+            <button type="button" class="btn btn-danger rojo w-100">Añadir</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- MODAL TE-->
+    <div class="modal fade" id="modalTe" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header rojo text-white">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Té</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center mb-2">
+                    <p class="m-0 me-2" style="width:150px;">Manzanilla - $0</p>
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    </div>
+
+                    <div class="d-flex align-items-center mb-2">
+                    <p class="m-0 me-2" style="width:150px;">Gengibre con limón - $0</p>
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    </div>
+
+                    <div class="d-flex align-items-center mb-2">
+                    <p class="m-0 me-2" style="width:150px;">Frutos rojos - $0</p>
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    </div>
+
+                    <div class="d-flex align-items-center mb-2">
+                    <p class="m-0 me-2" style="width:150px;">12 flores - $0</p>
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    </div>
+
+                    <div class="d-flex align-items-center mb-2">
+                    <p class="m-0 me-2" style="width:150px;">Canela - $0</p>
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    </div>
+
+                    <div class="d-flex align-items-center mb-2">
+                    <p class="m-0 me-2" style="width:150px;">Verde - $0</p>
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    </div>
+
+                    <div class="d-flex align-items-center mb-2">
+                    <p class="m-0 me-2" style="width:150px;">Hierbabuena - $0</p>
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="comentariosSandwich">Comentarios o Instrucciones:</label>
+                        <textarea class="form-control" id="comentariosSandwich"></textarea>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+            
+        <div class="modal-footer">
+            <button type="button" class="btn btn-danger rojo w-100">Añadir</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- MODAL AGUAS NATURALES-->
+    <div class="modal fade" id="modalAguas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header rojo text-white">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Aguas Naturales (Litro)</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center mb-2">
+                    <p class="m-0 me-2" style="width:150px;">Maracuyá - $35</p>
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    </div>
+
+                    <div class="d-flex align-items-center mb-2">
+                    <p class="m-0 me-2" style="width:150px;">Limón - $35</p>
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    </div>
+
+                    <div class="d-flex align-items-center mb-2">
+                    <p class="m-0 me-2" style="width:150px;">Jamaica - $35</p>
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    </div>
+
+                    <div class="d-flex align-items-center mb-2">
+                    <p class="m-0 me-2" style="width:150px;">Tamarindo - $35</p>
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    </div>
+
+                    <div class="d-flex align-items-center mb-2">
+                    <p class="m-0 me-2" style="width:150px;">Guayaba - $35</p>
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    </div>
+
+                    <div class="d-flex align-items-center mb-2">
+                    <p class="m-0 me-2" style="width:150px;">Pepino limón y chia - $40</p>
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    </div>
+                    <div class="mb-3">
+                        <label for="comentariosSandwich">Comentarios o Instrucciones:</label>
+                        <textarea class="form-control" id="comentariosSandwich"></textarea>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+            
+        <div class="modal-footer">
+            <button type="button" class="btn btn-danger rojo w-100">Añadir</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+  <script>
+    // Espera al DOM por si acaso
+    document.addEventListener('DOMContentLoaded', () => {
+      const tarjetas = document.querySelectorAll('.tarjeta');
+      if (!tarjetas.length) console.warn('No se encontraron elementos .tarjeta');
+
+      tarjetas.forEach((el) => {
+        el.addEventListener('mouseenter', () => {
+          console.log('mouseenter en', el);
+
+          // remove clases previas para garantizar reinicio
+          el.classList.remove('animate__animated', 'animate__pulse', 'animate__bounceIn', 'animate__bounceIn');
+
+          // forzar reflow para poder reiniciar la animación si las clases ya estaban
+          void el.offsetWidth;
+
+          // añadir clase de Animate.css
+          el.classList.add('animate__animated', 'animate__pulse');
+
+          // función para limpiar después de que termine la animación
+          function onAnimEnd() {
+            el.classList.remove('animate__animated', 'animate__pulse');
+            el.removeEventListener('animationend', onAnimEnd);
+            el.removeEventListener('webkitAnimationEnd', onAnimEnd);
+          }
+
+          // escuchar ambos eventos por compatibilidad
+          el.addEventListener('animationend', onAnimEnd);
+          el.addEventListener('webkitAnimationEnd', onAnimEnd);
+        });
+      });
+    });
+  </script>
+</body>
+</html>

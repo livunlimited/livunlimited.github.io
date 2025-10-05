@@ -1,0 +1,13 @@
+/* .tarjeta {
+    text-align: center;
+    background: rgb(131 17 17);
+    border-radius: 20px;
+    padding: 1rem;
+    color: antiquewhite;
+    margin-top: 1rem;
+    cursor: pointer;
+} */
+
+.rojo {
+    background-color: rgb(131 17 17);
+}
