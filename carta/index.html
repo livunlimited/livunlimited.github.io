@@ -8,6 +8,7 @@
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
   <!-- Animate.css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -50,6 +51,18 @@
   </div>
 
   <div class="container">
+
+    <div class="row" style="padding: 1rem;">
+        <div class="mb-3">
+            <label for="clienteInput" class="form-label" style="color: white;">Cliente</label>
+            <input type="text" class="form-control" id="clienteInput">
+        </div>
+        <div class="mb-3 text-center">
+            <button type="button" class="btn btn-warning w-50 mb-2"><i class="bi bi-whatsapp"></i> <i class="bi bi-file-text"></i> Ver pedido y enviar</button>
+            <!-- <button type="button" class="btn btn-success w-50"><i class="bi bi-whatsapp"></i> Enviar</button> -->
+        </div>
+    </div>
+
     <div class="row">
       <div class="col-lg-6">
         <div class="tarjeta animate__animated animate__bounceIn" data-bs-toggle="modal" data-bs-target="#modalSandwich">
@@ -146,22 +159,22 @@
 
                     <div class="d-flex align-items-center mb-2">
                     <p class="m-0 me-2" style="width:60px;">Pollo</p>
-                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0" data-precio="40">
                     </div>
 
                     <div class="d-flex align-items-center mb-2">
                     <p class="m-0 me-2" style="width:60px;">Jamón</p>
-                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0" data-precio="40">
                     </div>
 
                     <div class="d-flex align-items-center mb-2">
                     <p class="m-0 me-2" style="width:60px;">Atún</p>
-                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0" data-precio="40">
                     </div>
 
                     <div class="d-flex align-items-center mb-2">
                     <p class="m-0 me-2" style="width:60px;">Huevo</p>
-                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0" data-precio="40">
                     </div>
 
                     <div class="mb-3">
@@ -194,22 +207,22 @@
 
                     <div class="d-flex align-items-center mb-2">
                     <p class="m-0 me-2" style="width:60px;">Pollo</p>
-                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0" data-precio="80">
                     </div>
 
                     <div class="d-flex align-items-center mb-2">
                     <p class="m-0 me-2" style="width:60px;">Jamón</p>
-                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0" data-precio="80">
                     </div>
 
                     <div class="d-flex align-items-center mb-2">
                     <p class="m-0 me-2" style="width:60px;">Atún</p>
-                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0" data-precio="80">
                     </div>
 
                     <div class="d-flex align-items-center mb-2">
                     <p class="m-0 me-2" style="width:60px;">Huevo</p>
-                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0" data-precio="80">
                     </div>
 
                     <div class="mb-3">
@@ -243,17 +256,17 @@
                     <hr>
                     <div class="d-flex align-items-center mb-2">
                     <p class="m-0 me-2" style="width:150px;">Chico (8oz) - $20</p>
-                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0" data-precio="20">
                     </div>
 
                     <div class="d-flex align-items-center mb-2">
                     <p class="m-0 me-2" style="width:150px;">Normal (12oz) - $35</p>
-                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0" data-precio="35">
                     </div>
 
                     <div class="d-flex align-items-center mb-2">
                     <p class="m-0 me-2" style="width:150px;">Grande (16oz) - $35</p>
-                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0" data-precio="35">
                     </div>
 
                     <hr>
@@ -261,17 +274,17 @@
                     <hr>
                     <div class="d-flex align-items-center mb-2">
                     <p class="m-0 me-2" style="width:150px;">Chico (8oz) - $25</p>
-                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0" data-precio="25">
                     </div>
 
                     <div class="d-flex align-items-center mb-2">
                     <p class="m-0 me-2" style="width:150px;">Normal (12oz) - $30</p>
-                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0" data-precio="30">
                     </div>
 
                     <div class="d-flex align-items-center mb-2">
                     <p class="m-0 me-2" style="width:150px;">Grande (16oz) - $40</p>
-                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0" data-precio="40">
                     </div>
 
                     <div class="mb-3">
@@ -303,12 +316,12 @@
                 <div class="col-lg-6">
                     <div class="d-flex align-items-center mb-2">
                     <p class="m-0 me-2" style="width:150px;">Normal (10oz) - $25</p>
-                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0" data-precio="25">
                     </div>
 
                     <div class="d-flex align-items-center mb-2">
                     <p class="m-0 me-2" style="width:150px;">Grande (16oz) - $40</p>
-                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0" data-precio="40">
                     </div>
 
                     <div class="mb-3">
@@ -339,13 +352,13 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="d-flex align-items-center mb-2">
-                    <p class="m-0 me-2" style="width:150px;">Zanahoria - $25</p>
-                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    <p class="m-0 me-2" style="width:150px;">Zanahoria</p>
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0"  data-precio="40">
                     </div>
 
                     <div class="d-flex align-items-center mb-2">
                     <p class="m-0 me-2" style="width:150px;">Con betabel o combinados - $45</p>
-                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0"  data-precio="45">
                     </div>
 
                     <div class="mb-3">
@@ -377,12 +390,12 @@
                 <div class="col-lg-6">
                     <div class="d-flex align-items-center mb-2">
                     <p class="m-0 me-2" style="width:150px;">Fresa</p>
-                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0" data-precio="40">
                     </div>
 
                     <div class="d-flex align-items-center mb-2">
                     <p class="m-0 me-2" style="width:150px;">Cacao</p>
-                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0" data-precio="40">
                     </div>
 
                     <div class="mb-3">
@@ -414,12 +427,12 @@
                 <div class="col-lg-6">
                     <div class="d-flex align-items-center mb-2">
                     <p class="m-0 me-2" style="width:150px;">Normal (12oz) - $35</p>
-                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0" data-precio="35">
                     </div>
 
                     <div class="d-flex align-items-center mb-2">
                     <p class="m-0 me-2" style="width:150px;">Grande (16oz) - $45</p>
-                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0" data-precio="45">
                     </div>
 
                     <div class="mb-3">
@@ -451,12 +464,12 @@
                 <div class="col-lg-6">
                     <div class="d-flex align-items-center mb-2">
                     <p class="m-0 me-2" style="width:150px;">Manzana - $45</p>
-                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0" data-precio="45">
                     </div>
 
                     <div class="d-flex align-items-center mb-2">
                     <p class="m-0 me-2" style="width:150px;">Plátano - $45</p>
-                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0" data-precio="45">
                     </div>
 
                     <div class="d-flex align-items-center mb-2">
@@ -554,32 +567,32 @@
                 <div class="col-lg-6">
                     <div class="d-flex align-items-center mb-2">
                     <p class="m-0 me-2" style="width:150px;">Maracuyá - $35</p>
-                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0" data-precio="35">
                     </div>
 
                     <div class="d-flex align-items-center mb-2">
                     <p class="m-0 me-2" style="width:150px;">Limón - $35</p>
-                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0" data-precio="35">
                     </div>
 
                     <div class="d-flex align-items-center mb-2">
                     <p class="m-0 me-2" style="width:150px;">Jamaica - $35</p>
-                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0" data-precio="35">
                     </div>
 
                     <div class="d-flex align-items-center mb-2">
                     <p class="m-0 me-2" style="width:150px;">Tamarindo - $35</p>
-                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0" data-precio="35">
                     </div>
 
                     <div class="d-flex align-items-center mb-2">
                     <p class="m-0 me-2" style="width:150px;">Guayaba - $35</p>
-                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0" data-precio="35">
                     </div>
 
                     <div class="d-flex align-items-center mb-2">
                     <p class="m-0 me-2" style="width:150px;">Pepino limón y chia - $40</p>
-                    <input type="number" class="form-control form-control-sm w-25" placeholder="0">
+                    <input type="number" class="form-control form-control-sm w-25" placeholder="0" data-precio="40">
                     </div>
                     <div class="mb-3">
                         <label for="comentariosSandwich">Comentarios o Instrucciones:</label>
@@ -597,7 +610,190 @@
     </div>
     </div>
 
-  <script>
+<!-- MODAL VER PEDIDO -->
+<div class="modal fade" id="modalVerPedido" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-warning text-dark">
+        <h5 class="modal-title">Pedido Actual</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div id="listaPedido"></div>
+        <hr>
+        <h5 class="text-end">Total: $<span id="totalPedido">0</span></h5>
+      </div>
+      <div class="modal-footer d-flex flex-column gap-2">
+        <button type="button" class="btn btn-danger w-100" id="btnVaciarPedido">
+          🗑️ Vaciar Pedido
+        </button>
+        <button type="button" class="btn btn-success w-100" id="btnEnviarWhatsApp">
+          💬 Enviar por WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  
+// ---------- VARIABLES GLOBALES ----------
+  let pedido = [];
+  const clienteInput = document.getElementById("clienteInput");
+  const STORAGE_KEY = "pedidoActual";
+
+  // ---------- FUNCIONES DE LOCALSTORAGE ----------
+  function guardarPedido() {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(pedido));
+  }
+
+  function cargarPedido() {
+    const guardado = localStorage.getItem(STORAGE_KEY);
+    if (guardado) {
+      pedido = JSON.parse(guardado);
+    }
+  }
+
+  function limpiarPedido() {
+    pedido = [];
+    localStorage.removeItem(STORAGE_KEY);
+  }
+
+  // ---------- FUNCIONES PRINCIPALES ----------
+  function mostrarPedido() {
+    const lista = document.getElementById('listaPedido');
+    const totalEl = document.getElementById('totalPedido');
+    lista.innerHTML = '';
+
+    if (pedido.length === 0) {
+      lista.innerHTML = '<p class="text-center text-muted">No hay productos en el pedido.</p>';
+      totalEl.textContent = '0';
+      return;
+    }
+
+    let total = 0;
+    pedido.forEach((item, index) => {
+      const subtotal = item.cantidad * item.precio;
+      total += subtotal;
+
+      const div = document.createElement('div');
+      div.classList.add('border-bottom', 'py-2');
+      div.innerHTML = `
+        <div class="d-flex justify-content-between align-items-start">
+          <div>
+            <strong>${item.cantidad} × ${item.producto}</strong><br>
+            <small>${item.categoria}</small><br>
+            ${item.comentarios ? `<small class="text-secondary">📝 ${item.comentarios}</small><br>` : ''}
+            <span class="text-success fw-bold">$${subtotal}</span>
+          </div>
+          <button class="btn btn-sm btn-outline-danger" data-index="${index}">❌</button>
+        </div>
+      `;
+      lista.appendChild(div);
+    });
+
+    totalEl.textContent = total.toFixed(2);
+
+    // Botones eliminar
+    lista.querySelectorAll('button[data-index]').forEach(btn => {
+      btn.addEventListener('click', e => {
+        const i = parseInt(e.currentTarget.dataset.index);
+        pedido.splice(i, 1);
+        guardarPedido();
+        mostrarPedido();
+      });
+    });
+  }
+
+  // ---------- EVENTOS ----------
+  // Cargar pedido guardado al iniciar
+  cargarPedido();
+
+  // Botones "Añadir" dentro de los modales
+  document.querySelectorAll('.modal .btn-danger').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const modal = this.closest('.modal');
+      const titulo = modal.querySelector('.modal-title').textContent.trim();
+      const inputs = modal.querySelectorAll('input[type="number"]');
+      const comentarios = modal.querySelector('textarea') ? modal.querySelector('textarea').value.trim() : '';
+
+      inputs.forEach(inp => {
+        const cantidad = parseInt(inp.value) || 0;
+        const precio = parseFloat(inp.dataset.precio) || 0;
+        const nombreProducto = inp.previousElementSibling.textContent.trim();
+
+        if (cantidad > 0) {
+          pedido.push({
+            producto: nombreProducto.includes('$') ? nombreProducto.split(' - $')[0] : nombreProducto,
+            cantidad,
+            precio,
+            categoria: titulo,
+            comentarios
+          });
+          inp.value = '';
+        }
+      });
+
+      if (comentarios) modal.querySelector('textarea').value = '';
+      guardarPedido();
+      bootstrap.Modal.getInstance(modal).hide();
+    });
+  });
+
+  // Botón Ver pedido
+  document.querySelector('.btn-warning').addEventListener('click', () => {
+    mostrarPedido();
+    const modalPedido = new bootstrap.Modal(document.getElementById('modalVerPedido'));
+    modalPedido.show();
+  });
+
+  // Vaciar pedido completo
+  document.getElementById('btnVaciarPedido').addEventListener('click', () => {
+    if (confirm("¿Seguro que deseas vaciar todo el pedido?")) {
+      limpiarPedido();
+      mostrarPedido();
+    }
+  });
+
+// Enviar por WhatsApp (versión corregida con emojis visibles)
+document.getElementById('btnEnviarWhatsApp').addEventListener('click', () => {
+  if (pedido.length === 0) {
+    alert("No hay productos para enviar.");
+    return;
+  }
+
+  const cliente = clienteInput.value.trim() || "Sin nombre";
+  let texto = "🧾 *Pedido de " + cliente + "*\n\n";
+  let total = 0;
+
+  pedido.forEach(item => {
+    const subtotal = item.cantidad * item.precio;
+    total += subtotal;
+    texto += "✅ " + item.cantidad + " × " + item.producto + " (" + item.categoria + ") - $" + subtotal + "\n";
+    if (item.comentarios) texto += "📝 " + item.comentarios + "\n";
+    texto += "\n";
+  });
+
+  texto += "💰 *TOTAL:* $" + total.toFixed(2);
+
+  // Codificación mejorada para WhatsApp (mantiene emojis y saltos de línea)
+  const mensaje = encodeURIComponent(texto)
+    .replace(/%0A/g, "%0A") // mantiene los saltos de línea
+    .replace(/%20/g, "+");  // mejora compatibilidad
+
+  const numero = ""; // deja vacío para elegir contacto manualmente
+  const url = numero 
+    ? `https://wa.me/${numero}?text=${mensaje}`
+    : `https://wa.me/?text=${mensaje}`;
+
+  window.open(url, "_blank");
+});
+
+
+
+  // Si hay pedido guardado, actualiza vista al abrir
+  if (pedido.length > 0) mostrarPedido();
+
     // Espera al DOM por si acaso
     document.addEventListener('DOMContentLoaded', () => {
       const tarjetas = document.querySelectorAll('.tarjeta');
@@ -630,5 +826,6 @@
       });
     });
   </script>
+
 </body>
 </html>
